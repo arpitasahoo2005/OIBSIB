@@ -3,52 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Temperature Converter</title>
   </head>
   <body>
-    <div class="portfolio-container">
-      <ul class="navlist">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Project</a></li>
-        <li><a href="#">Service</a></li>
-      </ul>
-      <div class="left-container">
-        <div class="icons">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-        <div class="content">
-          <p class="intro">Hi! I am <span>Arpita Sahoo</span></p>
-          <h1>Web Developer.</h1>
-          <p class="detail">
-            I'm passionate about both frontend and backend development and
-            proficient in C and Java.Eager to contribute my skills to innovative
-            projects in the tech industry. I'm good at problem solving and team
-            collaboration..
-          </p>
-          <div class="btn-container">
-            <button>Hire Me</button>
-            <button>View Project</button>
-          </div>
-        </div>
-      </div>
-      <div class="right-container"></div>
-      <div class="design">
-        <div class="circle"></div>
-        <div class="circle"></div>
-      </div>
-    </div>
+    <form>
+      <h1>Temperature Converter</h1>
+      <input type="number" id="inputBox" />
+      <br />
+      <input type="radio" id="CtoF" name="selectConversion">
+      <label for="CtoF">Celsius to Farenheit</label>
+      <br />
+      <input type="radio" id="FtoC" name="selectConversion">
+      <label for="FtoC">Farenheit to Celsius</label>
+      <br />
+      <input type="submit" id="submitBtn" onclick="convert()">
+      <p id="result"></p>
+      <script src="script.js"></script>
+    </form>
   </body>
 </html>
